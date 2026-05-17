@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you reference the Organizational Intelligence Thesis, please cite it as below."
+title: "Organizational Intelligence Thesis"
+authors:
+  - family-names: "Roca"
+    given-names: "Alex Wu"
+version: "0.1.0-public-canonical"
+date-released: "2026-05-17"
+url: "https://github.com/alexwuroca/organizational-intelligence-thesis"
+abstract: >
+  The Organizational Intelligence Thesis examines how AI changes the generation,
+  storage, invocation, replication, ownership, and control of organizational capability.
+  It argues that after AI, the firm shifts from a legal organization that hires people,
+  manages processes, and owns resources into a responsibility-authority-capability
+  structure that designs, trains, and controls organizational intelligence assets.
+keywords:
+  - organizational intelligence
+  - firm theory
+  - AI and organizations
+  - organizational capability
+  - intelligence assets
+  - control rights
+  - responsibility shell
+  - authority shell
+  - capability shell
+  - AI governance
+  - theory of the firm
+repository-code: "https://github.com/alexwuroca/organizational-intelligence-thesis"
