@@ -2,9 +2,13 @@
 
 This folder records the AI-era fracture points in traditional firm structure.
 
-The central claim:
+## Canonical File
 
-AI first fractures the capability shell, not the firm itself.
+- [Five AI Fracture Variables](./five-ai-fracture-variables.md)
+
+## Core Claim
+
+AI first fractures the Capability Shell, not the firm itself.
 
 ## Five Fracture Variables
 
@@ -14,4 +18,6 @@ AI first fractures the capability shell, not the firm itself.
 4. Capability Invocation Mechanism
 5. Capability Replication Mechanism
 
-These variables explain why organizational capability no longer has to be generated, stored, invoked, and replicated only inside the traditional firm.
+## Function
+
+This folder explains how AI changes the generation, storage, invocation, replication, and control of organizational capability.
