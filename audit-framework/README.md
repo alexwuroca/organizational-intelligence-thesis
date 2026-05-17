@@ -2,11 +2,21 @@
 
 This folder contains audit tools for testing whether a claim, chapter, framework, or public essay remains aligned with the Organizational Intelligence Thesis.
 
-## Audit Questions
+## Canonical File
 
-1. Does the claim stay focused on complex coordination capability?
-2. Does it distinguish organizational intelligence from ordinary AI tools?
-3. Does it avoid treating intelligence assets as mere data assets?
-4. Does it distinguish responsibility shell, authority shell, and capability shell?
-5. Does it explain control rights rather than only efficiency gains?
-6. Does it survive opposition from execution, competition, structure, institution, civilization, and philosophy?
+- [Six-Layer Pressure Test](./six-layer-pressure-test.md)
+
+## Function
+
+This folder provides the testing system for the thesis.
+
+Every major claim should be tested across six layers:
+
+1. Execution layer
+2. Competition layer
+3. Structural layer
+4. Institutional layer
+5. Civilizational layer
+6. Philosophical layer
+
+Claims that fail these tests should be revised, narrowed, or rejected.
