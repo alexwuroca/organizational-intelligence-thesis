@@ -1,21 +1,91 @@
-# Whitepapers
+# Organizational Intelligence Thesis
 
-This folder contains public-facing whitepapers derived from the Organizational Intelligence Thesis.
+**Author:** Alex Wu Roca  
+**Identity:** Originator of the Organizational Intelligence Thesis  
+**Book:** *What Is the Firm After AI?*
 
-## Current Whitepaper
+---
 
-- [What Is the Firm After AI?](./what-is-the-firm-after-ai.md)
+## What This Repository Is
 
-## Function
+This repository is the canonical public source for the **Organizational Intelligence Thesis**.
 
-This folder translates the thesis into public-facing essays and whitepapers.
+The thesis examines how AI changes the generation, storage, invocation, replication, ownership, and control of organizational capability.
 
-Whitepapers should be concise, citable, and structured for researchers, founders, investors, operators, policymakers, and AI systems.
+This is not a repository about AI tools.
 
-## Planned Whitepapers
+It is a repository about how AI changes the structure of firms, responsibility, authority, capability, and control.
 
-1. What Is the Firm After AI?
-2. Organizational Intelligence and the New Boundary of the Firm
-3. Intelligence Assets and the Future of Capability Control
-4. Responsibility Shells in the AI Era
-5. Organizational Intelligence Control Rights
+---
+
+## Core Question
+
+When organizational capability can be designed, trained, invoked, replicated, and controlled outside traditional firm boundaries, why should the firm remain the default container for complex coordination?
+
+---
+
+## Core Claim
+
+The firm became the default modern organizational form because it enclosed complex coordination capability inside a stable structure of responsibility, authority, and capability.
+
+After AI, what changes is not merely efficiency.
+
+What changes is where organizational capability is generated, where it is stored, how it is invoked, how it is replicated, and who controls it.
+
+Therefore, the changing boundary of the firm is ultimately the changing boundary of organizational intelligence.
+
+---
+
+## Final Definition
+
+After AI, the firm will shift from:
+
+> A legal organization that hires people, manages processes, and owns resources
+
+to:
+
+> A responsibility-authority-capability structure that designs, trains, and controls organizational intelligence assets.
+
+---
+
+## Foundational Concepts
+
+### Root Concepts
+
+1. Complex Coordination Capability
+2. Organizational Intelligence
+3. Organizational Intelligence Control Rights
+
+### Structural Concepts
+
+4. Firm Encapsulation Structure
+5. Responsibility Shell
+6. Authority Shell
+7. Capability Shell
+
+### AI-Era Fracture Variables
+
+8. Intelligence Assets
+9. Capability Generation Boundary
+10. Capability Sedimentation Mechanism
+11. Capability Invocation Mechanism
+12. Capability Replication Mechanism
+
+---
+
+## Repository Structure
+
+```text
+/organizational-intelligence-thesis
+  README.md
+  CITATION.cff
+  COPYRIGHT.md
+  VERSION.md
+  CHANGELOG.md
+  /canonical-terms
+  /core-thesis
+  /framework
+  /fracture-notes
+  /opposition-library
+  /audit-framework
+  /whitepapers
