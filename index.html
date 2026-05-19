@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Organizational Intelligence Thesis | Alex Wu Roca</title>
+  <meta name="description" content="The Organizational Intelligence Thesis by Alex Wu Roca. AI does not merely improve efficiency. It changes where organizational capability is generated, accumulated, invoked, replicated, controlled, valued, and made accountable." />
+  <meta name="author" content="Alex Wu Roca" />
+  <meta property="og:title" content="The Organizational Intelligence Thesis" />
+  <meta property="og:description" content="AI does not merely improve efficiency. It changes where organizational capability is generated, accumulated, invoked, replicated, controlled, valued, and made accountable." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg: #f8f7f2;
+      --text: #111111;
+      --muted: #5f625d;
+      --line: #dedbd2;
+      --panel: #ffffff;
+      --accent: #123c4a;
+      --accent-soft: #e5eef0;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(248, 247, 242, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-size: 16px;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .navlinks a:hover { color: var(--text); }
+
+    main { display: block; }
+
+    .hero {
+      padding: 96px 0 72px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      max-width: 920px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(44px, 7vw, 86px);
+      font-weight: 500;
+    }
+
+    .hero p {
+      max-width: 880px;
+      margin: 28px 0 0;
+      font-size: clamp(20px, 3vw, 31px);
+      line-height: 1.32;
+      color: #1d1d1b;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+
+    section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.6fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 500;
+    }
+
+    .lead {
+      font-size: 22px;
+      line-height: 1.42;
+      color: #222;
+      margin-top: 0;
+    }
+
+    .body p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    blockquote {
+      margin: 28px 0;
+      padding: 22px 26px;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      line-height: 1.35;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.04);
+    }
+
+    .card .label {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0 0 18px;
+      font-size: 16px;
+    }
+
+    .card a {
+      display: inline-flex;
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .concepts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .concept {
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .concept h3 {
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .concept p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .readmore {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .readmore a {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      display: block;
+    }
+
+    .readmore strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+
+    .readmore span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer {
+      padding: 42px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 860px) {
+      .nav { height: auto; padding: 18px 0; align-items: flex-start; }
+      .navlinks { flex-wrap: wrap; justify-content: flex-end; gap: 12px 16px; }
+      .hero { padding: 72px 0 56px; }
+      .section-grid, .cards, .concepts, .readmore { grid-template-columns: 1fr; }
+      section { padding: 56px 0; }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width: min(var(--max), calc(100% - 28px)); }
+      .nav { display: block; }
+      .navlinks { margin-top: 12px; justify-content: flex-start; }
+      blockquote { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Organizational Intelligence Thesis</a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#thesis">Thesis</a>
+        <a href="#books">Books</a>
+        <a href="#concepts">Concepts</a>
+        <a href="GITHUB_URL_HERE">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="eyebrow">Canonical v0.2.0 · Two Books Completed</div>
+        <h1 id="hero-title">The Organizational Intelligence Thesis</h1>
+        <p>AI does not merely improve efficiency. It changes where organizational capability is generated, accumulated, invoked, replicated, controlled, valued, and made accountable.</p>
+        <div class="actions">
+          <a class="btn primary" href="GITHUB_URL_HERE">Read the Canonical Version</a>
+          <a class="btn secondary" href="#books">View the First Two Books</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="thesis" aria-labelledby="thesis-title">
+      <div class="wrap section-grid">
+        <div>
+          <div class="eyebrow">Core Question</div>
+          <h2 id="thesis-title">What is the firm after AI?</h2>
+        </div>
+        <div class="body">
+          <p class="lead">The old question was why the firm exists.</p>
+          <p>After AI, the deeper question is what the firm becomes when complex coordination capability can be generated, accumulated, invoked, replicated, and controlled beyond the traditional boundaries of the firm.</p>
+          <blockquote>The firm should be understood as a structure for stabilizing, controlling, reproducing, and making accountable complex coordination capability.</blockquote>
+          <p>This is not only a question about technology. It is a question about capability, control, value, responsibility, and institutional stability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="books" aria-labelledby="books-title">
+      <div class="wrap">
+        <div class="section-grid" style="margin-bottom: 32px;">
+          <div>
+            <div class="eyebrow">Two Completed Books</div>
+            <h2 id="books-title">The first two books define the foundation.</h2>
+          </div>
+          <div class="body">
+            <p>Book 1 defines the firm after AI. Book 2 extends the thesis into enterprise value, capability attribution, and profit quality.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="label">Book 1</div>
+            <h3>What Is the Firm After AI?</h3>
+            <p>This book defines the firm as a structure for the stable control of complex coordination capability.</p>
+            <p>It argues that after AI, the firm can no longer be understood only as a legal container, contractual structure, or production unit.</p>
+            <a href="GITHUB_BOOK_1_URL_HERE">Read Book 1 Summary →</a>
+          </article>
+          <article class="card">
+            <div class="label">Book 2</div>
+            <h3>How Should Enterprise Value Be Reinterpreted After AI?</h3>
+            <p>Profit may remain on the company’s books, but the capability may no longer remain inside the firm.</p>
+            <p>Enterprise value after AI must be interpreted through capability attribution and profit quality.</p>
+            <a href="GITHUB_BOOK_2_URL_HERE">Read Book 2 Summary →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="concepts" aria-labelledby="concepts-title">
+      <div class="wrap">
+        <div class="section-grid" style="margin-bottom: 32px;">
+          <div>
+            <div class="eyebrow">Core Concepts</div>
+            <h2 id="concepts-title">A structural vocabulary for AI-era organization.</h2>
+          </div>
+          <div class="body">
+            <p>The thesis is built around a small set of concepts designed to explain capability, control, value, and responsibility after AI.</p>
+          </div>
+        </div>
+        <div class="concepts">
+          <div class="concept">
+            <h3>Complex Coordination Capability</h3>
+            <p>The capacity to organize judgment, coordination, execution, feedback, correction, and responsibility across multiple actors and systems.</p>
+          </div>
+          <div class="concept">
+            <h3>Organizational Intelligence</h3>
+            <p>The repeatable capacity of an organization to judge, act, receive feedback, correct itself, and bear responsibility over time.</p>
+          </div>
+          <div class="concept">
+            <h3>Capability Shell</h3>
+            <p>The structure that carries the generation, accumulation, invocation, replication, and improvement of organizational capability.</p>
+          </div>
+          <div class="concept">
+            <h3>Power Shell</h3>
+            <p>The structure that determines who can invoke, modify, allocate, replicate, transfer, audit, or shut down key capabilities.</p>
+          </div>
+          <div class="concept">
+            <h3>Responsibility Shell</h3>
+            <p>The structure that carries explanation, accountability, correction, remedy, legitimacy, and social trust.</p>
+          </div>
+          <div class="concept">
+            <h3>Capability Attribution</h3>
+            <p>The question of where the profit-producing capability actually resides.</p>
+          </div>
+          <div class="concept">
+            <h3>Profit Quality</h3>
+            <p>Whether profit is backed by capability that is sustainable, replicable, governable, auditable, and accountable.</p>
+          </div>
+          <div class="concept">
+            <h3>Responsibility Capacity</h3>
+            <p>The ability to explain, audit, correct, compensate, and remain legitimate when AI-amplified actions produce consequences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="read-more" aria-labelledby="read-more-title">
+      <div class="wrap section-grid">
+        <div>
+          <div class="eyebrow">Read More</div>
+          <h2 id="read-more-title">Start from the canonical source.</h2>
+        </div>
+        <div class="readmore">
+          <a href="GITHUB_URL_HERE">
+            <strong>GitHub</strong>
+            <span>Read the canonical v0.2.0 source.</span>
+          </a>
+          <a href="SUBSTACK_URL_HERE">
+            <strong>Substack</strong>
+            <span>First essay: What Is the Firm After AI?</span>
+          </a>
+          <a href="mailto:CONTACT_EMAIL_HERE">
+            <strong>Contact</strong>
+            <span>Alex Wu Roca · Originator of the Organizational Intelligence Thesis.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>© Alex Wu Roca. Organizational Intelligence Thesis.</div>
+      <div>Originator of the Organizational Intelligence Thesis · Author of <em>What Is the Firm After AI?</em></div>
+    </div>
+  </footer>
+</body>
+</html>
